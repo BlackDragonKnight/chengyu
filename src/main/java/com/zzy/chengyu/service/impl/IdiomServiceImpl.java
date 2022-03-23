@@ -30,7 +30,7 @@ public class IdiomServiceImpl implements IdiomService {
         }
         log.info("接收前端参数；{}", idiomNew);
         String idiomName = idiomMapper.getIdiomName(idiomNew);
-//        log.info("数据库返回参数；{}", idiomName);
+        log.info("数据库返回参数；{}", idiomName);
         IdiomDO idiomDO = new IdiomDO();
         if(idiomNew != null && idiomNew.equals(idiomName)){
             idiomDO.setName(idiomName);
