@@ -4,9 +4,11 @@ package com.zzy.chengyu.pojo.DO;
  * @author 11723
  */
 public class IdiomDO {
+
     private Integer id;
+
     /**
-     * 成语
+     * 成语名
      */
     private String name;
 
@@ -20,5 +22,13 @@ public class IdiomDO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "IdiomDO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
